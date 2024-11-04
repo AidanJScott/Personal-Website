@@ -1,0 +1,136 @@
+/*Aidan Scott*/
+
+html {
+	background-color: #D5D5D5;
+}
+
+/*body section styles*/
+body {
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows:70px 40px 1fr 1fr 142px;
+	grid-template-areas:
+		"head head head head"
+		"navi navi navi navi"
+		"main main main main"
+		"sect sect asid asid"
+		"foot foot foot foot";
+}
+
+/*header section styles*/
+header {
+	grid-area: head;
+	display: grid;
+	grid-template-columns: 6% 1fr 6% 6%;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+		"prof text link gith";
+	align-items: center;
+	justify-items: center;
+	background-color: #D5D5D5;
+	
+}
+#profile {
+	grid-area: prof;
+	width: 60%;
+	height: auto;
+}
+#headtext {
+	justify-self: start;
+	grid-area: text;
+	padding-left: 2.5%;
+	font-size: 170%;
+}
+#lihead {
+	grid-area: link;
+	width: 60%;
+	height: auto;
+}
+#githead {
+	grid-area: gith;
+	width: 60%;
+	height: auto;
+}
+
+/*navigation section styles*/
+nav {
+	grid-area: navi;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	padding-inline-start: 0;
+	list-style-type: none;
+	border: 0;
+}
+nav li{
+	float: left;
+	width: 25%;
+	background: #52278A;
+	text-align: center;
+}
+nav a{
+	display: block;
+	padding: 10px 0;
+}
+nav a:link, nav li a:visited{
+	text-decoration: none;
+	color: white;
+}
+nav a:hover, nav li a:focus{
+	background: gray;
+}
+/*current navigation bar page*/
+#current{
+	color: #AE98D7;
+}
+
+/*main section styles*/
+main {
+	grid-area: main;
+	padding: 1.5rem 0 1.5rem 5%;
+}
+h1 {
+	width: 35%;
+}
+main img {
+	float: right;
+	max-height: 100%;
+	max-width: auto;
+}
+main h2 {
+	margin-bottom: 0;
+}
+main h3 {
+	margin-top: 0;
+}
+
+section {
+	grid-area: sect;
+	padding: 25px;
+	background: #52278A;
+	font-size: 125%;
+}
+section h3 {
+	color: white;
+}
+section p {
+	color: white;
+}
+
+aside {
+	grid-area: asid;
+	background: #AE98D7;
+	padding: 25px;
+	font-size: 125%;
+}
+
+/*footer section styles*/
+footer {
+	grid-area: foot;
+	padding: 1rem 0;
+	text-align: center;
+	line-height: 1.75;
+}

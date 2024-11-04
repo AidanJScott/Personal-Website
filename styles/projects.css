@@ -1,0 +1,32 @@
+/*Aidan Scott*/
+body{
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows:70px 40px 1fr 142px;
+	grid-template-areas:
+		"head head head head"
+		"navi navi navi navi"
+		"main main main asid"
+		"foot foot foot foot";
+}
+header {grid-area: head;}
+nav{grid-area: navi;}
+main{grid-area: main;}
+aside{grid-area: asid;}
+footer{grid-area: foot;}
+
+label{
+	display: block;
+	float: left;
+	width: 15%;
+	text-align: right;
+}
+input[type=text]{
+	margin-left: 2%;
+	margin-bottom: .5em;
+	width: 50%
+}
+#button{
+	margin-left: 7em;
+	margin-bottom: 10px;
+}
