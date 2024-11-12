@@ -13,7 +13,13 @@ header {grid-area: head;}
 nav{grid-area: navi;}
 main{
 	grid-area: main;
-	padding-right: 5%;
+	padding: 0%;
+}
+main div {
+	padding: 0.25rem 5%;
+}
+main div.alternate {
+	background-color: #c7b8d4;
 }
 
 aside{grid-area: asid;}
