@@ -10,7 +10,7 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	display: grid;
 	grid-template-columns: repeat(4, 25%);
-	grid-template-rows:70px 40px 1fr 1fr 142px;
+	grid-template-rows:4.375rem 2.5rem 1fr 1fr 8.875rem;
 	grid-template-areas:
 		"head head head head"
 		"navi navi navi navi"
@@ -68,12 +68,12 @@ nav ul{
 nav li{
 	float: left;
 	width: 25%;
-	background: #52278A;
 	text-align: center;
 }
 nav a{
 	display: block;
-	padding: 10px 0;
+	padding: 0.625rem 0;
+	background: #52278A;
 }
 nav a:link, nav li a:visited{
 	text-decoration: none;
