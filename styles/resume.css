@@ -1,0 +1,16 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8rem 10.5rem 15rem 32.5rem;
+    grid-template-areas: 
+    "titl titl"
+    "info educ"
+    "skil proj"
+    "expe expe";
+}
+#title {grid-area: titl;}
+#info {grid-area: info;}
+#education {grid-area: educ;}
+#skills {grid-area: skil}
+#projects {grid-area: proj;}
+#experience {grid-area: expe;}
