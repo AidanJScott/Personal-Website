@@ -1,16 +1,34 @@
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 8rem 10.5rem 15rem 32.5rem;
+    grid-template-rows: 12rem 14.5rem 22rem 38.5rem;
     grid-template-areas: 
     "titl titl"
     "info educ"
     "skil proj"
     "expe expe";
+    padding: 0;
 }
-#title {grid-area: titl;}
-#info {grid-area: info;}
-#education {grid-area: educ;}
+div {
+    padding: 2rem 7%;
+}
+#title {
+    grid-area: titl;
+    padding: 1rem 3.5%;
+}
+#info {
+    grid-area: info;
+    background-color: #c7b8d4;
+}
+#education {
+    grid-area: educ;
+    background-color: #c7b8d4;
+}
 #skills {grid-area: skil}
 #projects {grid-area: proj;}
-#experience {grid-area: expe;}
+#experience {
+    grid-area: expe;
+    background-color: #c7b8d4;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}
