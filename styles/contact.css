@@ -1,1 +1,30 @@
 /*Aidan Scott*/
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "github email linkedin";
+    padding: 0;
+    justify-items: center;
+    padding-top: 3rem;
+}
+main img {
+    height: 40%;
+    width: auto;
+    float: none;
+}
+#gitmain{
+    grid-area: github;
+}
+#emailmain{
+    grid-area: email;
+}
+#linkedmain{
+    grid-area: linkedin;
+}
+main h3 {
+    clear: both;
+    text-align: center;
+    padding-top: 2rem;
+}
