@@ -53,3 +53,34 @@ input[type=text], input[type=email]{
 #button{
     margin: 1rem 0 1.5rem 4%; 
 }
+
+@media only screen and (max-width: 600px){
+    body{
+		grid-template-columns: 1fr;
+		grid-template-rows:4.375rem 10rem 1fr 8.875rem;
+		grid-template-areas:
+			"head"
+			"navi"
+			"main"
+			"foot";
+	}
+    nav li {
+        float: none;
+        width: 100%;
+    }
+    #headtext{font-size: 120%;}
+
+    main{
+        grid-area: main;
+        display: block;
+    }
+    section{grid-area: sect;}
+    aside{
+        grid-area: asid;
+        padding-top: 1rem;
+    }
+    input[type=text], input[type=email]{
+        margin-right: 45%;
+    }
+    
+}
