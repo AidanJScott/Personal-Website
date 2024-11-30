@@ -24,22 +24,7 @@ main div.alternate {
 
 aside{grid-area: asid;}
 aside h1 {width: auto;}
-label{
-	display: block;
-	float: left;
-	width: auto;
-	text-align: right;
-}
-input[type=text], input[type=email]{
-	float: right;
-	margin-left: 2%;
-	margin-bottom: .5em;
-	width: 65%
-}
-#button{
-	margin-left: 7em;
-	margin-bottom: 10px;
-}
+
 
 footer{grid-area: foot;}
 

@@ -1,30 +1,55 @@
 /*Aidan Scott*/
 main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 45% 55%;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "github email linkedin";
+    "contact form";
     padding: 0;
     justify-items: center;
-    padding-top: 3rem;
 }
-main img {
-    height: 40%;
-    width: auto;
-    float: none;
+section {
+    background-color: #D5D5D5;
+    grid-area: contact;
+    
 }
-#gitmain{
-    grid-area: github;
+section img {
+    width: 20%;
+    float: left;
+    padding: 1rem 5%;
 }
-#emailmain{
-    grid-area: email;
-}
-#linkedmain{
-    grid-area: linkedin;
-}
-main h3 {
+section h3 {
     clear: both;
     text-align: center;
     padding-top: 2rem;
+    color: black;
+}
+
+aside {
+    grid-area: form;
+    width: 100%;
+    padding: 0;
+}
+aside h1 {padding-left: 5%;}
+aside h2 {
+    padding-left: 5%;
+    padding-bottom: 1rem;
+}
+aside form {padding-left: 5%;}
+
+/*form styles*/
+label{
+	display: block;
+	float: left;
+	width: auto;
+	text-align: right;
+}
+input[type=text], input[type=email]{
+	float: right;
+	margin-left: 2%;
+    margin-right: 60%;
+	width: 25%
+}
+#button{
+    margin: 1rem 0 1.5rem 4%; 
 }
