@@ -22,9 +22,34 @@ main div.alternate {
 	background-color: #c7b8d4;
 }
 
-aside{grid-area: asid;}
+aside{
+	grid-area: asid;
+	display: flex;
+	flex-direction: column;
+}
 aside h1 {width: auto;}
-
+aside h4{
+	align-self: center;
+	margin-bottom: 0;
+}
 
 footer{grid-area: foot;}
 
+/*media query styles*/
+@media only screen and (max-width: 600px){
+	body{
+		grid-template-columns: 1fr;
+		grid-template-rows:4.375rem 10rem 1fr 30% 8.875rem;
+		grid-template-areas:
+			"head"
+			"navi"
+			"main"
+			"asid"
+			"foot";
+		}
+		nav li {
+			float: none;
+			width: 100%;
+		}
+		#headtext{font-size: 120%;}
+}
