@@ -1,0 +1,21 @@
+/*Aidan Scott*/
+
+body {
+    display: block;
+	font-family: "Times New Roman", serif;
+}
+
+header img {display: none;}
+
+nav {display: none;}
+
+main {font-size: 80%;}
+main img {display: none;}
+
+section p {color: black;}
+section h3 {color: black;}
+
+aside p {color: black;}
+
+footer {display: none;}
+
