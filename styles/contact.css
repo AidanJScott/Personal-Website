@@ -18,12 +18,17 @@ section img {
     float: left;
     padding: 1rem 5%;
 }
-section h3 {
-    clear: both;
-    text-align: center;
-    padding-top: 2rem;
-    color: black;
+
+table {
+    justify-self: center;
 }
+
+table, th, td {
+    border: 2px solid #444444;
+    width: 80%;
+}
+
+
 
 aside {
     grid-area: form;
@@ -47,7 +52,7 @@ label{
 input[type=text], input[type=email]{
 	float: right;
 	margin-left: 2%;
-    margin-right: 60%;
+    margin-right: 55%;
 	width: 25%
 }
 #button{
@@ -75,10 +80,6 @@ input[type=text], input[type=email]{
         display: block;
     }
     section{grid-area: sect;}
-    
-    th, td {
-        border: 2px solid #444444;
-    }
 
     aside{
         grid-area: asid;
