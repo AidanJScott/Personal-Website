@@ -75,6 +75,11 @@ input[type=text], input[type=email]{
         display: block;
     }
     section{grid-area: sect;}
+    
+    th, td {
+        border: 2px solid #444444;
+    }
+
     aside{
         grid-area: asid;
         padding-top: 1rem;
