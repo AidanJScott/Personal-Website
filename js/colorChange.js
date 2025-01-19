@@ -1,12 +1,15 @@
 // Aidan Scott
 "use strict";
 let colorArray = [["#52278A", "#AE98D7"], ["#194C82", "#9AC6F5"], ["#AF974D", "#DCCA87"], ["#3F594A", "#A7BEB5"], ["#D24E01", "#EE9F27"], ["#9B0109", "#FD5A5D"], ["#DA8592", "#F4B5CD"], ["#4A4A4A", "#ADADAD"], ["#F88378", "#E7C1A8"]]
+let audio = new Audio("images/concrete_scrape.mp3");
 
 // handle sliding for background icon
 let backgroundIcon = document.querySelector("main img");
 let colorTable = document.querySelector("table");
 backgroundIcon.setAttribute("clicked", "False");
 backgroundIcon.addEventListener("click", event => {
+    
+    audio.play();
     if (backgroundIcon.getAttribute("clicked") == "False"){
         backgroundIcon.setAttribute("class", "slideLeft");
         backgroundIcon.setAttribute("clicked", "True");

@@ -3,7 +3,7 @@
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 12rem 14.5rem 22rem 38.5rem;
+    grid-template-rows: 12rem 14.5rem 22rem 38.5rem 1rem;
     grid-template-areas: 
     "titl titl"
     "info educ"
