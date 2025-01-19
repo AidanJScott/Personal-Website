@@ -4,6 +4,10 @@
 // select background icon
 let backgroundIcon = document.querySelector("main img");
 
+backgroundIcon.addEventListener("click", event => {
+    backgroundIcon.setAttribute("class", "slideLeft");
+});
+
 // add color palette change on double click
 backgroundIcon.addEventListener("dblclick", event =>{
     changePageColors("#194C82", "#9AC6F5");
