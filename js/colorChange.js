@@ -48,6 +48,9 @@ function changePageColors(darkColor, lightColor){
     section.style.background = darkColor;
     let aside = document.querySelector("aside");
     aside.style.background = lightColor;
+    let asideLink = document.querySelector("aside p a");
+    asideLink.style.color = darkColor;
+
 
     // images
     let profileImage = document.querySelector("#profile");
