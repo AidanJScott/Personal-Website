@@ -3,9 +3,18 @@
 
 // select background icon
 let backgroundIcon = document.querySelector("main img");
+backgroundIcon.setAttribute("clicked", "False");
 
 backgroundIcon.addEventListener("click", event => {
-    backgroundIcon.setAttribute("class", "slideLeft");
+    console.log(backgroundIcon.getAttribute("clicked"));
+    if (backgroundIcon.getAttribute("clicked") == "False"){
+        backgroundIcon.setAttribute("class", "slideLeft");
+        backgroundIcon.setAttribute("clicked", "True");
+    }
+    else{
+        backgroundIcon.setAttribute("class", "slideRight");
+        backgroundIcon.setAttribute("clicked", "False");
+    }
 });
 
 // add color palette change on double click

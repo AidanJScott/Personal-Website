@@ -144,13 +144,23 @@ footer img {
 }
 
 /*Sliding CSS Animation - code adpated from https://stackoverflow.com/questions/58814133/how-can-i-make-this-div-slide-across-half-of-the-screen*/
-@keyframes slide-from-left {
+@keyframes slide-to-left {
 	from {
-	  left: 100%;
+	  left: 98%;
 	  transform: translateX(-85%);
 	}
 	to {
 	  left: 85%;
+	  transform: translateX(-85%);
+	}
+}
+@keyframes slide-to-right {
+	from {
+	  left: 85%;
+	  transform: translateX(-85%);
+	}
+	to {
+	  left: 98%;
 	  transform: translateX(-85%);
 	}
   }
@@ -160,6 +170,14 @@ footer img {
 	position: absolute;
 	left: 85%;
 	transform: translateX(-85%);
-	animation-name: slide-from-left;
+	animation-name: slide-to-left;
+	animation-duration: 2s;
+  }
+
+  .slideRight {
+	position: absolute;
+	left: 100%;
+	transform: translateX(-100%);
+	animation-name: slide-to-right;
 	animation-duration: 2s;
   }
