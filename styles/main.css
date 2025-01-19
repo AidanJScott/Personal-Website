@@ -104,6 +104,17 @@ main img {
 	width: auto;
 	background-color: #AE98D7;
 }
+main table {
+	position: absolute;
+	z-index: -1;
+	float: right;
+	top: 32%;
+	left: 89%;
+}
+main td {
+	padding: 1.2rem;
+	border: 1px solid black;
+  }
 main h2 {
 	margin-bottom: 0;
 }
