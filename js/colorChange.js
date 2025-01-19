@@ -6,41 +6,47 @@ let backgroundIcon = document.querySelector("main img");
 
 // add color palette change on double click
 backgroundIcon.addEventListener("dblclick", event =>{
+    changePageColors("#194C82", "#9AC6F5");
+});
+
+function changePageColors(darkColor, lightColor){
     // navigation bar
     let navigationLinks = document.querySelectorAll("nav a");
     navigationLinks.forEach(link =>{
-        link.style.background = "#194C82"
+        link.style.background = darkColor;
     });
     let currentPage = document.querySelector("#current");
-    currentPage.style.color = "#9AC6F5";
+    currentPage.style.color = lightColor;
 
     // main
     let span = document.querySelector("span");
-    span.style.color = "#194C82"
+    span.style.color = darkColor;
 
     // section and aside
     let section = document.querySelector("section");
-    section.style.background = "#194C82";
+    section.style.background = darkColor;
     let aside = document.querySelector("aside");
-    aside.style.background = "#9AC6F5";
-
-    // footer
-    let printButton = document.querySelector("button");
-    printButton.style.backgroundColor = "#9AC6F5"
+    aside.style.background = lightColor;
 
     // images
     let profileImage = document.querySelector("#profile");
-    profileImage.src = "images/Alt_Profile_Icon.png";
+    profileImage.style.backgroundColor = darkColor;
 
     let gitImage = document.querySelector("#githead");
-    gitImage.src = "images/Alt_GitHub_Icon.png";
+    gitImage.style.backgroundColor = darkColor;
 
     let linkedInImage = document.querySelector("#lihead");
-    linkedInImage.src = "images/Alt_Linked_In_Icon.png";
+    linkedInImage.style.backgroundColor = darkColor;
 
     let backgroundIconImage = document.querySelector("main img");
-    backgroundIconImage.src = "images/Alt_Profile_Icon_Background.png";
+    backgroundIconImage.style.backgroundColor = lightColor;
 
     let footerImage = document.querySelector("footer img");
-    footerImage.src = "images/Alt_Footer_Profile_Icon.png";
-});
+    footerImage.style.backgroundColor = lightColor;
+
+    // links
+    let footerLinks = document.querySelectorAll("footer a");
+    footerLinks.forEach(footerLink =>{
+        footerLink.style.color = darkColor;
+    });    
+}
